@@ -1,29 +1,29 @@
 ---
 sidebar_position: 0
 sidebar_class_name: hidden
-keywords: [compatibility]
-custom_edit_url:
 ---
 
-# Vectorstores
+# Vector stores
 
-## Features 
+import { CategoryTable, IndexTable } from "@theme/FeatureTables";
 
-The table below lists the features for some of our most popular vector stores.
+A [vector store](/docs/concepts/vectorstores) stores [embedded](/docs/concepts/embedding_models) data and performs similarity search.
 
-Vectorstore|Delete by ID|Filtering|Search by Vector|Search with score|Async|Passes Standard Tests|Multi Tenancy|Local/Cloud|IDs in add Documents
-:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
-AstraDBVectorStore|✅|✅|✅|✅|✅|❌|❌|❌|Local|✅
-Chroma|✅|✅|✅|✅|✅|❌|❌|❌|Local|✅
-Clickhouse|✅|✅|❌|✅|❌|❌|❌|❌|Local|✅
-CouchbaseVectorStore|✅|✅|❌|✅|✅|❌|❌|❌|Local|✅
-ElasticsearchStore|✅|✅|✅|❌|✅|❌|❌|❌|Local|✅
-FAISS|✅|✅|✅|✅|✅|❌|❌|❌|Local|✅
-InMemoryVectorStore|✅|✅|❌|✅|✅|❌|❌|❌|Local|✅
-Milvus|✅|✅|❌|✅|✅|❌|❌|❌|Local|✅
-MongoDBAtlasVectorSearch|✅|✅|❌|❌|✅|❌|❌|❌|Local|✅
-PGVector|✅|✅|✅|✅|✅|❌|❌|❌|Local|✅
-PineconeVectorStore|✅|✅|✅|❌|✅|❌|❌|❌|Local|✅
-QdrantVectorStore|✅|✅|✅|✅|✅|❌|❌|❌|Local|✅
-Redis|✅|✅|✅|✅|✅|❌|❌|❌|Local|✅
+**Select embedding model:**
+
+import EmbeddingTabs from "@theme/EmbeddingTabs";
+
+<EmbeddingTabs/>
+
+**Select vector store:**
+
+import VectorStoreTabs from "@theme/VectorStoreTabs";
+
+<VectorStoreTabs/>
+
+<CategoryTable category="vectorstores" />
+
+## All Vectorstores
+
+<IndexTable />
 
